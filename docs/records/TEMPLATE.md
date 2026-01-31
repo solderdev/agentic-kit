@@ -4,6 +4,7 @@ type: spec
 status: proposed/accepted/done
 date: YYYY-MM-DD hh:mm:ss
 supersedes: (optional list, e.g. 0003)
+relates_to: (optional list, e.g. 0007)
 
 ## Goal
 - 

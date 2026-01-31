@@ -2,6 +2,9 @@
 
 This repository is a lean template for **agentic, spec-driven changes**.
 
+## TL;DR
+For non-trivial changes, follow the Records workflow below: create record → get approval → implement → verify → mark `done`.
+
 ## Read Order
 1) `AGENTS.md`: these rules
 2) `docs/index.md`: repo map
@@ -9,7 +12,16 @@ This repository is a lean template for **agentic, spec-driven changes**.
 4) Any relevant files under `docs/records/` (especially the latest relevant records)
 
 ## How Changes/Extensions Work (Records)
-Use **records** as the contract between programmer and an agent for non-trivial changes:
+Use **records** as the contract between programmer and an agent for non-trivial changes.
+
+### Status Semantics (Required)
+- `proposed`: drafted, not approved
+- `accepted`: spec approved (only after explicit approval)
+- `done`: implemented + verified (Verification section filled)
+
+Allowed transitions: `proposed → accepted → done` (no skipping).
+
+### Workflow
 1) Create a new file: `docs/records/NNNN-short-slug.md` using `docs/records/TEMPLATE.md` (`status: proposed`).
   - Keep the record small, concrete, and testable.
 2) Get feedback and approval from the programmer (you).
@@ -23,12 +35,13 @@ Use **records** as the contract between programmer and an agent for non-trivial 
 - Prefer explicit, testable acceptance criteria over broad narratives.
 
 ## Change Discipline
-- Keep diffs minimal; avoid opportunistic refactors.
-- If you must make a structural/architecture change, capture the "why" in the record.
-- If a change affects architecture/boundaries/invariants, update `docs/design.md`.
+- Default to the smallest possible diff; avoid opportunistic refactors.
+- If a change affects architecture/boundaries/invariants/entry points, update `docs/design.md`.
 - Don’t add new dependencies unless the record explicitly calls for it (and note the tradeoff).
-- Make sure logging and code comments are clear and concise.
+- Keep logging and code comments clear and concise.
 
 ## Rules
-- never use git for commits or similar. git commands are read only!
+- Git is read-only for the agent.
+  - Allowed: `git status`, `git diff`, `git log`, `git show`, `git blame`
+  - Not allowed: `git commit`, `git add`, `git push`, `git reset`, `git rebase`, `git checkout`, `git tag`
 - do not hard-code any secrets
