@@ -12,9 +12,10 @@ It should stay short and describe **boundaries, invariants, and main flows**, no
   -
 
 ## Architecture Overview
+- Architectural decisions
+  -
 - Main components and how they talk (arrows):
   -
-- Architectural decisions
 
 ## Directory Map
 - Where code lives and what belongs there:

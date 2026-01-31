@@ -30,7 +30,7 @@ Allowed transitions: `proposed → accepted → done` (no skipping).
 4) Finalize record: Update the record status to `done` (implemented + verified) and fill in **Verification** (exact commands run / results).
 
 ### Record Rules
-- Record IDs are chronological and numbered; use the next available `NNNN`.
+- Record IDs are chronological and numbered; use the next available `NNNN` (file names).
 - Do not delete or rewrite `done` records; if something changes later, add a new record (next `NNNN`) that `supersedes:` the old one.
 - Prefer explicit, testable acceptance criteria over broad narratives.
 
