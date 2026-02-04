@@ -48,3 +48,6 @@ Allowed transitions: `proposed → accepted → done` (no skipping).
   - Allowed: `git status`, `git diff`, `git log`, `git show`, `git blame`
   - Not allowed: `git commit`, `git add`, `git push`, `git reset`, `git rebase`, `git checkout`, `git tag`
 - do not hard-code any secrets
+
+## Useful Commands
+- Build: `xxx`
