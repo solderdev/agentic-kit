@@ -7,7 +7,8 @@ This page is a navigation aid for AI agents: where things live and where to look
 - `docs/design.md`: high-level design, boundaries, invariants
 
 ## Change Records
-- `docs/records/`: chronological records (specs + durable decisions)
+- `docs/records/`: records (specs + durable decisions)
+  - `docs/records/<branch>/`: branch-scoped records (`<branch>` is a directory-safe form of the git branch name)
   - `docs/records/TEMPLATE.md`: template for new records
 
 ## Project Files

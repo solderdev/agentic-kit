@@ -1,4 +1,4 @@
-# NNNN: <Title>
+# <ID>: <Title>
 
 - type: spec/decision/fix/feature
 - status: proposed/accepted/done
@@ -7,6 +7,8 @@
 - relates_to: (optional list, e.g. 0007)
 
 ---
+
+_Filename convention:_ `docs/records/<branch>/<id>-short-slug.md` where `<branch>` is a directory-safe form of the git branch name (unsafe characters become `_`) and `<id>` is a UTC timestamp in `YYYYMMDDTHHMMSSZ` format (e.g. `20260204T110750Z`).
 
 ## Area Affected
 - 
