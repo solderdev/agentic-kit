@@ -8,10 +8,6 @@
 
 ---
 
-_Filename convention:_ `.agents/records/<branch>/<id>-short-slug.md` where `<branch>` is a directory-safe form of the git branch name (unsafe characters become `_`) and `<id>` is a UTC timestamp in `YYYYMMDDTHHMMSSZ` format (e.g. `20260204T110750Z`).
-
-_Subtopics:_: Proposed subtopics can be changed or subtopics may be added as you see fit.
-
 ## Area Affected
 - 
 
