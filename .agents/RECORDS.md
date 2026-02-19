@@ -14,6 +14,11 @@ Allowed transitions: `proposed → accepted → done` (no skipping).
   - Keep the Record small, concrete, and testable.
 2) Get feedback and approval from the programmer (you).
   - Update the Record to `status: accepted` (spec approved).
+  - Approval gate:
+    - Record includes 2-5 implementation slices.
+    - Each slice is independently testable.
+    - First slice can be merged without requiring later slices.
+    - Slices and abstractions are limited to what is needed to satisfy the current acceptance criteria.
 3) Implement the change. Update `.agents/DESIGN.md` if necessary.
 4) Finalize Record: Update the Record status to `done` (implemented + verified) and fill in **Verification** (exact commands run / results).
 

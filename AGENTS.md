@@ -19,6 +19,12 @@ CRITICAL: When writing new features or significant refactors or fixes, use a **R
 - If a change affects architecture/boundaries/invariants/entry points, update `.agents/DESIGN.md`.
 - Don’t add new dependencies unless the record explicitly calls for it (and note the tradeoff).
 - Keep logging and code comments clear and concise.
+- Choose the smallest change that satisfies the acceptance criteria; avoid new abstractions unless required for the current scope.
+
+## Small-Slice Rule (Required)
+- Prefer new small module/function over expanding large files.
+- One Record should target one behavior change.
+- If implementation spans multiple concerns, stop and split into multiple Records.
 
 ## Rules
 - Git is read-only for the agent.

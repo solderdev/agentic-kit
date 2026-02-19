@@ -28,6 +28,7 @@
 
 ## Plan
 1) 
+2) (optional) Slice N: <single behavior + verification>
 
 ## Notes
 **Related Code:**
