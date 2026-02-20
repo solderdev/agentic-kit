@@ -12,6 +12,10 @@ This page is a navigation aid for AI agents: where things live and where to look
   - `.agents/records/<branch>/`: branch-scoped records (`<branch>` is a directory-safe form of the git branch name)
   - `.agents/records/TEMPLATE.md`: template for new records
 
+## Skills
+- `skills/`: repository-local reusable skills (check here before external skill search)
+  - `skills/doc-gardening/SKILL.md`: workflow for documentation health checks and small doc-fix passes
+
 ## Project Files
 - `README.md`: minimal human overview
 - `src/`: contains source code

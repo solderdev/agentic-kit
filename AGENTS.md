@@ -7,9 +7,13 @@ For non-trivial changes, follow the Records workflow below: create record → ge
 
 ## Read Order
 1) `AGENTS.md`: these rules
-2) `.agents/INDEX.md`: repo map
+2) `.agents/INDEX.md`: repo map (includes repository-local skills)
 3) `.agents/RECORDS.md`: change records (specs, decisions, work plans)
 4) other files and locations can be found in the repo map.
+
+## Skills (Repository-Local)
+- Repository-local skills live under `skills/*/SKILL.md` (start from `.agents/INDEX.md`).
+- For docs cleanup / instruction drift, use `skills/doc-gardening/SKILL.md`.
 
 ## How Changes/Extensions Work (Record)
 CRITICAL: When writing new features or significant refactors or fixes, use a **Record** (as described in .agents/RECORDS.md) from design to implementation.
