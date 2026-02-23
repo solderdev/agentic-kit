@@ -4,6 +4,7 @@ This repository is a lean template for **agentic, spec-driven changes**.
 
 ## TL;DR
 For non-trivial changes, follow the Records workflow below: create record → get approval → implement → verify → mark `done`.
+Style: telegraph. Drop filler/grammar. Min tokens (global AGENTS + replies).
 
 ## Read Order
 1) `AGENTS.md`: these rules
@@ -26,6 +27,7 @@ CRITICAL: When writing new features or significant refactors or fixes, use a **R
 - Choose the smallest change that satisfies the acceptance criteria; avoid new abstractions unless required for the current scope.
 
 ## Small-Slice Rule (Required)
+- Keep files <~500 LOC; split/refactor as needed.
 - Prefer new small module/function over expanding large files.
 - One Record should target one behavior change.
 - If implementation spans multiple concerns, stop and split into multiple Records.
