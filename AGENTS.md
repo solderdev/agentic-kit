@@ -33,7 +33,7 @@ TLDR: create record → get approval → implement → verify → mark `done`.
 - If implementation spans multiple concerns, stop and split into multiple Records.
 
 ## Rules
-- Git is read-only for the agent.
+- Git is read-only for you.
   - Allowed: `git status`, `git diff`, `git log`, `git show`, `git blame`
   - Not allowed: `git commit`, `git add`, `git push`, `git reset`, `git rebase`, `git checkout`, `git tag`
 - keep secrets separate from the code

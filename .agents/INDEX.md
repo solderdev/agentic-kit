@@ -1,6 +1,6 @@
 # Repo Map
 
-This page is a navigation aid for AI agents: where things live and where to look first.
+This page is a navigation aid: where things live and where to look first.
 
 ## Start Here
 - `AGENTS.md`: agent rules + workflow (read first)

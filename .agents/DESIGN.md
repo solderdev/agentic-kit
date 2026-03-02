@@ -1,6 +1,6 @@
 # Design (High-Level)
 
-This document is the stable, high-level map of the codebase intended for AI agents.
+This document is the stable, high-level map of the codebase.
 It should stay short and describe **boundaries, invariants, and main flows**, not every detail.
 Never remove sections from the design document just because they are not yet implemented.
 
