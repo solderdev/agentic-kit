@@ -3,8 +3,11 @@
 This repository is a lean template for **agentic, spec-driven changes**.
 
 ## TL;DR
-For non-trivial changes, follow the Records workflow below: create record → get approval → implement → verify → mark `done`.
 Style: telegraph. Drop filler/grammar. Min tokens (global AGENTS + replies).
+
+## CRITICAL: How Changes/Extensions Work (Record)
+When writing new features or significant refactors or fixes, use a **Record** (as described in .agents/RECORDS.md) from design to implementation.
+TLDR: create record → get approval → implement → verify → mark `done`.
 
 ## Read Order
 1) `AGENTS.md`: these rules
@@ -15,9 +18,6 @@ Style: telegraph. Drop filler/grammar. Min tokens (global AGENTS + replies).
 ## Skills (Repository-Local)
 - Repository-local skills live under `skills/*/SKILL.md` (start from `.agents/INDEX.md`).
 - For docs cleanup / instruction drift, use `skills/doc-gardening/SKILL.md`.
-
-## How Changes/Extensions Work (Record)
-CRITICAL: When writing new features or significant refactors or fixes, use a **Record** (as described in .agents/RECORDS.md) from design to implementation.
 
 ## Change Discipline
 - Default to the smallest possible diff; avoid opportunistic refactors.
