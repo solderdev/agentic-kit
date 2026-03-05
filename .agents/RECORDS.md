@@ -29,7 +29,7 @@ Allowed transitions: `proposed → accepted → done` (no skipping).
   - If a filename already exists, use the next second (`...51Z`, `...52Z`, etc.).
 - Filename convention: `.agents/records/<branch>/<id>-short-slug.md`.
   - `<branch>` is a directory-safe form of the git branch name (unsafe characters become `_`).
-  - `<id>` is a UTC timestamp in `YYYYMMDDTHHMMSSZ` format.
+  - `<id>` is a UTC timestamp in `YYYYMMDDTHHMMSSZ` format. Use `date -u +%Y%m%dT%H%M%SZ` or equivalent.
 - Subtopics in `.agents/records/TEMPLATE.md` are proposed defaults and may be changed, removed, or added as needed.
 - Do not delete or rewrite `done` Records; if something changes later, add a new Record that `supersedes:` the old one.
 - If a change can be split up in multiple Records do it. Focus on smaller tasks.
